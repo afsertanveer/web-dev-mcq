@@ -1,9 +1,10 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import banner from '../../images/banner.jpg';
+import Quiz from '../Quiz/Quiz';
 import './Home.css';
 const Home = () => {
-    const quizes = useLoaderData();
+    const quizes = useLoaderData().data;
     return (
       <div className="container">
         <div className="border banner border-dark my-4 p-4">
@@ -21,9 +22,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className='row g-4'>
             {
-                
+                quizes.map(quiz=><Quiz key={quiz.id} quiz={quiz}></Quiz>)
             }
         </div>
       </div>

@@ -1,0 +1,9 @@
+.navbar-bg {
+  background-color: coral;
+}
+.brand {
+  color: white;
+}
+.brand:hover {
+  color: blue;
+}

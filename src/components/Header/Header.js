@@ -14,7 +14,7 @@ function Header() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>
-            <Link className="text-white fw-bold" to="/home">
+            <Link  className="text-white fw-bold" to="/home">
               Home
             </Link>
             <Link className="text-white fw-bold" to="statistics">

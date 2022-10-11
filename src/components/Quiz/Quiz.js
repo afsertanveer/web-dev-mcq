@@ -25,9 +25,9 @@ const Quiz = ({ quiz }) => {
         )}
         <Card.Body className="card-disp d-flex justify-content-between align-items-center">
           <Card.Title>
-            <h1 className="fw-bolder">{quiz.name}</h1>
+            <h3 className="fw-bolder">{quiz.name}</h3>
           </Card.Title>
-          <h4 className="fw-bolder">Total Questions: {quiz.total}</h4>
+          <h6 className="fw-bolder">Questions: {quiz.total}</h6>
           <Button className='quiz-btn'>
               <p className='d-inline me-1' onClick={handleNavigate}>Start Quiz</p>
               <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>

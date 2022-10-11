@@ -23,11 +23,16 @@ const Blogs = () => {
       <div className="m-3">
         <h3 className="fw-bold">How does Context API work?</h3>
         <p className="mt-4">
-          React.createContext() is all you need. It returns a consumer and a
-          provider. Provider is a component that as it's names suggests provides
-          the state to its children. It will hold the "store" and be the parent
-          of all the components that might need that store. Consumer as it so
-          happens is a component that consumes and uses the state.
+          The React Context API is a way for a React app to effectively produce
+          global variables that can be passed around. This is the alternative to
+          "prop drilling" or moving props from grandparent to child to parent,
+          and so on. Context is also touted as an easier, lighter approach to
+          state management using Redux React.createContext() is all you need. It
+          returns a consumer and a provider. Provider is a component that as
+          it's names suggests provides the state to its children. It will hold
+          the "store" and be the parent of all the components that might need
+          that store. Consumer as it so happens is a component that consumes and
+          uses the state.
         </p>
       </div>
       <div className="m-3">
@@ -40,7 +45,7 @@ const Blogs = () => {
           </li>
           <li>It can be used to access a DOM element directly.</li>
           <li>
-           useRef only returns one item. It returns an Object called current.
+            useRef only returns one item. It returns an Object called current.
           </li>
         </p>
       </div>

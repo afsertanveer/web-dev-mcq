@@ -1,8 +1,16 @@
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { useNavigate } from 'react-router-dom';
 import './Quiz.css';
 const Quiz = ({ quiz }) => {
+  const navigate = useNavigate();
+  const handleNavigate =()=>
+  {
+    navigate(`/home/${quiz.id}`);
+  }
   return (
     <div className="quiz col-lg-6 col-md-12 col-sm-12">
       <Card>
@@ -15,14 +23,16 @@ const Quiz = ({ quiz }) => {
             <Card.Img variant="top" src={quiz.logo} className="img-fluid" />
           </div>
         )}
-        <Card.Body className="card-disp">
+        <Card.Body className="card-disp d-flex justify-content-between align-items-center">
           <Card.Title>
-            <h1 className='fw-bolder'>{quiz.name}</h1>
+            <h1 className="fw-bolder">{quiz.name}</h1>
           </Card.Title>
-          <Card.Text>
-            <p className="fw-bold">Total Questions: {quiz.total}</p>
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <h4 className="fw-bolder">Total Questions: {quiz.total}</h4>
+          <Button className='quiz-btn'>
+              <p className='d-inline me-1' onClick={handleNavigate}>Start Quiz</p>
+              <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
+            
+          </Button>
         </Card.Body>
       </Card>
     </div>

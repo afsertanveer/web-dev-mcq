@@ -1,0 +1,9 @@
+.question {
+  background-color: bisque;
+}
+.options {
+  pointer-events: none;
+}
+.single-question {
+  width: 90%;
+}

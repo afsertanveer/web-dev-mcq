@@ -7,3 +7,8 @@
 .quiz-img {
   background-color: black;
 }
+.quiz-btn {
+  background-color: green;
+  border-radius: 10px;
+  font-weight: bolder;
+}

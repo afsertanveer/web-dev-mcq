@@ -3,7 +3,7 @@ import Home from "../components/Home/Home";
 import QuizDetails from "../components/QuizDetails/QuizDetails";
 import Statistics from "../components/Statistics/Statistics";
 import Main from "../layouts/Main";
-import Blogs from './../components/Blogs/Blogs';
+import Blogs from "./../components/Blogs/Blogs";
 
 export const router = createBrowserRouter([
   {
@@ -36,13 +36,5 @@ export const router = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "*",
-    element: (
-      <div className="text-danger text-center mt-5">
-        <h1 className="font-bolder">404</h1>
-        <h2 className="font-bolder">This route is not found!</h2>
-      </div>
-    ),
-  },
+ 
 ]);
